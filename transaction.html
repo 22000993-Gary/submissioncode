@@ -1,0 +1,67 @@
+<!--I declare that this code was written by me.
+I will not copy or allow others to copy my code.
+I understand that copyiny code is considered as plagiarism
+
+Student Name:[Gary Choa Kai Ze]
+Student ID:[22000993]
+Class[1D-E63C]
+Date/Time Last modified: [14/08/2023 9:53pm]-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Transaction Success</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      flex-direction: column;
+      background: rgb(63,251,115);
+      background: radial-gradient(circle, rgba(63,251,115,0.5949816450017507) 54%, rgba(70,252,228,1) 100%);
+    }
+
+    .container {
+      text-align: center;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+    }
+
+    img {
+      width: 350px;
+      margin: 50px;
+    }
+
+    .message {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Transaction Page</a></href></h1>
+    </header>
+  <div class="container">
+    <p id="date-time"></p>
+    <img src="tick.jpg" alt="Success Tick">
+    <p class="message">Successfully paid $100 to the merchant</p>
+  </div>
+
+  <script>
+   
+    function updateDateTime() {
+  const dateTimeElement = document.getElementById('date-time');
+  const now = new Date();
+  const dateTimeString =
+    now.toLocaleDateString() + ' ' + now.toLocaleTimeString();
+  dateTimeElement.textContent = dateTimeString;
+}
+updateDateTime();
+  </script>
+</body>
+</html>

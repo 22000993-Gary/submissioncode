@@ -1,0 +1,87 @@
+<!--I declare that this code was written by me.
+I will not copy or allow others to copy my code.
+I understand that copyiny code is considered as plagiarism
+
+Student Name:[Gary Choa Kai Ze]
+Student ID:[22000993]
+Class[1D-E63C]
+Date/Time Last modified: [14/08/2023 9:53pm]-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SimplyPay - Login</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 0px;
+      margin:0px;
+      background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
+    }
+
+    header {
+      margin-bottom: 20px;
+      text-align: center;
+      padding:20px;
+      margin:0px;
+      text-decoration: none;
+    }
+
+    input {
+      display: block;
+      margin: 10px auto;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid whitesmoke;
+      width: 250px;
+      max-width: 100%;
+    }
+
+    input[type="submit"] {
+      background-color: green;
+      color: white;
+      border: none;
+    }
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-right: 10px;
+      background-image: linear-gradient(to right, #a8c0ff, #3f2b96);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    
+  </style>
+</head>
+<body>
+  <header>
+  <h1><a href="index.html">SimplyPay Log In</a></href></h1>
+ </header>
+  <form id="login-form">
+    <input type="email" placeholder="Email" id="email" required>
+    <input type="password" placeholder="Password" id="password" required>
+  </form>
+  <button onclick="simulateLogin()" class="button">Log In</button>
+
+  <script>
+    function simulateLogin() {
+      var emailInput = document.getElementById('email').value;
+      var passwordInput = document.getElementById('password').value;
+
+    
+      var placeholderEmail = 'user@gmail.com';
+      var placeholderPassword = 'password';
+
+      if (emailInput === placeholderEmail && passwordInput === placeholderPassword) {
+        alert('Login successful!');
+        window.location.href = 'homepage.html';
+      } else {
+        alert('Login failed. Incorrect email or password.');
+      }
+    }
+  </script>
+
+</body>
+</html>
